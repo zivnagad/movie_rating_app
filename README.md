@@ -1,24 +1,35 @@
 # Movie Rating Prediction App
 
-A Flask application for predicting movie ratings using an ElasticNet model.
+A Flask web application that predicts IMDB movie ratings using a trained ElasticNet machine learning model.
 
 ## Team
 - Ziv Nagad — 322558271
 
-## Installation and Running
+## Installation
 
-1. Install dependencies:
+1. Create a virtual environment:
+python -m venv venv
+
+2. Activate the virtual environment:
+- Windows: venv\Scripts\activate
+- Mac/Linux: source venv/bin/activate
+
+3. Install dependencies:
 pip install -r requirements.txt
 
-2. Run the server:
+## Running the App
+
 python api.py
 
-3. Open browser at:
+Then open your browser at:
 http://localhost:5000
 
-## Files
-- api.py — Flask server
-- assets_data_prep.py — prepare_data function
-- model.pkl — trained model
-- requirements.txt — required libraries
-- templates/index.html — user interface
+## Input Fields
+
+| Field | Description | Expected Range |
+|-------|-------------|----------------|
+| startYear | Movie release year | 1900 – 2025 |
+| runtimeMinutes | Movie duration in minutes | 1 – 500 |
+| Language | Primary language | e.g. English, French |
+| Country | Country of production | e.g. United States, Japan |
+| genres | One or more genres | Drama, Comedy, Documentary, Horror, Action, Romance, Thriller, Crime |
