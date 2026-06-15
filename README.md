@@ -4,6 +4,7 @@ A Flask web application that predicts IMDB movie ratings using a trained Elastic
 
 ## Team
 - Ziv Nagad — 322558271
+- Tiferet Baluka — 325204113
 
 ## Installation
 
